@@ -5,14 +5,14 @@ void main() async {
     MaterialApp(
       home: Home(),
       theme: ThemeData(
-        hintColor: Colors.blue,
+        hintColor: Colors.black,
         primaryColor: Colors.white,
         inputDecorationTheme: InputDecorationTheme(
           enabledBorder:
               OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
           focusedBorder:
               OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
-          hintStyle: TextStyle(color: Colors.lightBlueAccent),
+          hintStyle: TextStyle(color: Colors.black),
         ),
       ),
     ),
@@ -67,7 +67,7 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Ano/Mes/Dia para Dias - Fatec Ferraz"),
-        backgroundColor: Colors.blue[700],
+        backgroundColor: Colors.black,
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
               Icon(
                 Icons.date_range,
                 size: 150,
-                color: Colors.blueAccent,
+                color: Colors.black,
               ),
               construirTextField("Ano", "Qtde:", anoController,
                   "Favor Insira a qtde. de Ano(s)"),
@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
                     "Ano/Mes/Dia para Dias",
                     style: TextStyle(
                       fontSize: 30,
-                      color: Colors.blue,
+                      color: Colors.black,
                     ),
                   ),
                   onPressed: () {
@@ -139,7 +139,7 @@ Widget construirTextField(String texto, String prefixo, TextEditingController c,
     controller: c,
     decoration: InputDecoration(
       labelText: texto,
-      labelStyle: TextStyle(color: Colors.blue),
+      labelStyle: TextStyle(color: Colors.black),
       border: OutlineInputBorder(),
       prefixText: prefixo,
     ),
